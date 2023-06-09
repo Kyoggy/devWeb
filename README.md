@@ -1,2 +1,2 @@
 # devWeb
-Projeto de Desenvolvimento Web do Aluno Pedro Kajewski Junior
+Projeto de Desenvolvimento Web do aluno Pedro Kajewski Junior
