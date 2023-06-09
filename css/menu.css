@@ -1,0 +1,31 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+.dropdown-menu {
+    display: none;
+    background-color: white;
+    position: absolute;
+}
+
+.menu {
+    display: flex;
+}
+  
+.menu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+}
+
+.menu div {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+}
+
+.menu a:hover {
+    background-color: darkgray;
+}
