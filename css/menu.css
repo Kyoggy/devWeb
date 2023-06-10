@@ -10,12 +10,16 @@
 
 .menu {
     display: flex;
+    width: 99vw;
+    height: 45px;
+    background-color: grey;
 }
   
 .menu a {
     padding: 10px;
     color: white;
     text-decoration: none;
+    margin-left: 20px;
     background-color: gray;
 }
 
@@ -27,5 +31,5 @@
 }
 
 .menu a:hover {
-    background-color: darkgray;
+    background-color: rgb(217, 216, 216);
 }
