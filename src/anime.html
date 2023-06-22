@@ -7,15 +7,34 @@
     <title>Home</title>
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/anime.css">
+
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            top: 15%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+
+        .popup.visible {
+            display: block;
+        }
+    </style>
 </head>
-<body style="background-color: rgb(26, 25, 25);">
+<body">
     <div id="menu-container">
         <script src="../js/menu.js"></script>
         <script>carregaMenu();</script>
     </div>
         <p class="titulo">Animes</p>
         <div class="grid-container">
-            <div class="div_01"><img src="../img/One_Piece.webp"></div>
+            <div class="div_01"><img src="../img/One_Piece.webp" onclick="showPopup('O One piece são as amizades que você faz pelo caminho!')"></div>
             <div class="div_02">
                 <p class="titulo-anime">One Piece</p>
                 <p>"One Piece" é um mangá escrito e ilustrado por Eiichiro Oda.</p>
@@ -31,7 +50,7 @@
                 <p>"Hunter x Hunter" é um mangá escrito e ilustrado por Yoshihiro Togashi.</p>
                 <p>A história segue um jovem chamado Gon Freecss, que deseja se tornar um Hunter,</p>
                 <p>um membro de elite que realiza tarefas perigosas, como caçar criaturas místicas, </p>
-                <p>astrear tesouros e até mesmo perseguir criminosos. Ao longo de sua jornada, Gon faz amizade com outros aspirantes a Hunter e enfrenta desafios incríveis.</p>
+                <p>rastrear tesouros e até mesmo perseguir criminosos. Ao longo de sua jornada, Gon faz amizade com outros aspirantes a Hunter e enfrenta desafios incríveis.</p>
                 <p>O mangá é conhecido por sua narrativa complexa, sistema de poderes chamado "Nen" e por explorar temas como amizade, sacrifício e amadurecimento.</p>
             </div>
             <div class="div_05"><img src="../img/blueLock.webp"></div>
@@ -63,6 +82,24 @@
                 <p>Shin se junta ao exército do jovem rei Ei Sei de Qin e embarca em uma jornada para unificar toda a China.</p>
                 <p>"Kingdom" é conhecido por suas batalhas épicas, estratégias militares intricadas, desenvolvimento de personagens e por misturar eventos históricos com elementos ficcionais.</p>
             </div>
+            <div class="popup" id="popup">
+                <p id="popupMessage"></p>
+            </div>
         </div>
+
+        <script>
+            function showPopup(message) {
+                var popup = document.getElementById("popup");
+                var popupMessage = document.getElementById("popupMessage");
+                popupMessage.textContent = message;
+                popup.classList.add("visible");
+    
+                window.addEventListener("click", function(event) {
+                    if (event.target == popup) {
+                        popup.classList.remove("visible");
+                    }
+                });
+            }
+        </script>
 </body>
 </html>

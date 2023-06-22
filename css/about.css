@@ -1,36 +1,29 @@
 body{
     color: white;
+    overflow-x: hidden;
+    background-color: rgb(26, 25, 25);
 }
-p{
+/*Sistema de flex da página*/
+.flex-container > div{    
+    font-size: 30px;
+    margin: 5px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    height: 75vh;
+    text-align: center;
+}
+.titulo {    
     font-size: 50px;
-    margin-left: 45vw;
-    margin-top: 5vh;
+    text-shadow: 2px 2px 4px rgba(243, 239, 239, 0.5);
+    font-weight: bold;
 }
 
-@media screen and (min-width: 801px) and (max-width:1000px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    }
-    
-    
 
-}
-
-@media screen and (min-width: 401px) and (max-width:800px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-    
-    
-
-}
-
-@media screen and (min-width: 200px) and (max-width:400px) {
+@media screen and (min-width: 200px) and (max-width:800px) {
     body {
         display: grid;
         grid-template-columns: 1fr;

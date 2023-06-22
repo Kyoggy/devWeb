@@ -1,23 +1,7 @@
-@media screen and (min-width: 801px) and (max-width:1000px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-    
-    
-
-}
-
-@media screen and (min-width: 401px) and (max-width:800px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-    
-    
-
+body{
+    color: white;
+    overflow-x: hidden;
+    background-color: rgb(26, 25, 25);
 }
 
 @media screen and (min-width: 200px) and (max-width:400px) {
